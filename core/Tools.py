@@ -1,4 +1,5 @@
 import re
+import json
 
 class Tools:
     """
@@ -30,4 +31,12 @@ class Tools:
         f = open(f"{path}/{name}", mode="w")
         f.write(data)
         f.close()
+        print("Guardado con exito")
+        
+    def saveFileJson(self, path:str, name:str, data:dict)-> None:
+        """
+            Guarda un documento tipo json dado la ruta y el nombre junto con la extemsion del archivo.
+        """
+        with open("data/datos_paises_html.json", "w") as file:
+            json.dump(data, file, indent=4, ensure_ascii=False)
         print("Guardado con exito")
