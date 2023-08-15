@@ -15,9 +15,9 @@ Ashmore and Cartier Islands
 Australia
 Austria
 Azerbaijan
-Bahamas, The
+Bahamas The
 Bahrain
-Baker Island
+united states pacific island wildlife refuges
 Bangladesh
 Barbados
 Belarus
@@ -48,15 +48,15 @@ Chile
 China
 Christmas Island
 Clipperton Island
-Cocos (Keeling) Islands
+Cocos Keeling Islands
 Colombia
 Comoros
-Congo, Democratic Republic of the
-Congo, Republic of the
+Congo Democratic Republic of the
+Congo Republic of the
 Cook Islands
 Coral Sea Islands
 Costa Rica
-Cote d’Ivoire
+Cote Divoire
 Croatia
 Cuba
 Curacao
@@ -76,7 +76,7 @@ Estonia
 Eswatini
 Ethiopia
 European Union
-Falkland Islands (Islas Malvinas)
+Falkland Islands Islas Malvinas
 Faroe Islands
 Fiji
 Finland
@@ -84,7 +84,7 @@ France
 French Polynesia
 French Southern and Antarctic Lands
 Gabon
-Gambia, The
+Gambia The
 Gaza Strip
 Georgia
 Germany
@@ -101,10 +101,9 @@ Guinea-Bissau
 Guyana
 Haiti
 Heard Island and McDonald Islands
-Holy See (Vatican City)
+Holy See Vatican City
 Honduras
 Hong Kong
-Howland Island
 Hungary
 Iceland
 India
@@ -118,16 +117,13 @@ Italy
 Jamaica
 Jan Mayen
 Japan
-Jarvis Island
 Jersey
-Johnston Atoll
 Jordan
 Kazakhstan
 Kenya
-Kingman Reef
 Kiribati
-Korea, North
-Korea, South
+Korea North
+Korea South
 Kosovo
 Kuwait
 Kyrgyzstan
@@ -151,8 +147,7 @@ Marshall Islands
 Mauritania
 Mauritius
 Mexico
-Micronesia, Federated States of
-Midway Islands
+Micronesia Federated States of
 Moldova
 Monaco
 Mongolia
@@ -178,7 +173,6 @@ Norway
 Oman
 Pakistan
 Palau
-Palmyra Atoll
 Panama
 Papua New Guinea
 Paracel Islands
@@ -194,7 +188,7 @@ Romania
 Russia
 Rwanda
 Saint Barthelemy
-Saint Helena, Ascension, and Tristan da Cunha
+Saint Helena Ascension and Tristan da Cunha
 Saint Kitts and Nevis
 Saint Lucia
 Saint Martin
@@ -215,7 +209,7 @@ Tokelau
 Tonga
 Trinidad and Tobago
 Tunisia
-Turkey (Turkiye)
+Turkey Turkiye
 Turkmenistan
 Turks and Caicos Islands
 Tuvalu
@@ -224,7 +218,6 @@ Ukraine
 United Arab Emirates
 United Kingdom
 United States
-United States Pacific Island Wildlife Refuges
 Uruguay
 Uzbekistan
 Vanuatu
