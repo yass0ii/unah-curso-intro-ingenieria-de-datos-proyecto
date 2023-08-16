@@ -89,7 +89,7 @@ class ProcessHTML:
 
 
     def procces_gpd(self, texto: str):
-        result = re.search(r'\$([\d,.]+)(?: billion)?', str(texto))
+        result = re.search(r'\$([\d,.]+)(?: billion)?', str(texto))# million, billion
 
         if result:
             numero_str = result.group(1)

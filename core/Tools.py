@@ -53,3 +53,10 @@ class Tools:
             data = json.load(archivo)
         
         return data
+    
+    def conver_to_lower(self, word: str) -> str:
+        """
+            Corta los espacios en blanco de una cadena y la combierte a minusculas
+            @author AlexxFuentes
+        """
+        return word.strip().lower()
