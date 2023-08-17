@@ -55,18 +55,18 @@ class ProcessHTML:
 
         return 0
 
-    def limpiar(self, text: str) -> str:
-        result = re.search(r'(-?[\d,.]+)\s*m', str(text))
+    def limpiar(self, text: str) -> float:
+        result = re.search(r'(-?[\d,]+)\s*m?', text)
 
         if result:
             extracted_number = result.group(1)
             if ',' in extracted_number:
                 number = extracted_number.replace(',', '')
-                return number
+                return float(number) if number != '' else 0
             else:
-                return result.group(1)
+                return float(result.group(1))
 
-        return text
+        return 0
 
 
     def limpiar_porcentaje(self, text: str) -> float:
