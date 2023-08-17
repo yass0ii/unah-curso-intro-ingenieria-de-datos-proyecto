@@ -38,22 +38,22 @@ class ProcessHTML:
     
         return result
         
-    def limpiar_campos(self, text: str) -> str:
+    def limpiar_campos(self, text: str) -> float:
         result = re.search(r'([\d,.]+)(?:\s*(?:%|sq km|years))?', str(text))
 
         if result:
             extracted_number = result.group(1)
 
             if '(' in text and ')' in text:
-                return '0'
+                return 0
 
             if ',' in extracted_number:
                 number = extracted_number.replace(',', '')
-                return number
+                return float(number)
             else:
-                return extracted_number
+                return float(extracted_number)
 
-        return text
+        return 0
 
     def limpiar(self, text: str) -> str:
         result = re.search(r'(-?[\d,.]+)\s*m', str(text))
@@ -69,34 +69,32 @@ class ProcessHTML:
         return text
 
 
-    def limpiar_porcentaje(self, text: str) -> str:
+    def limpiar_porcentaje(self, text: str) -> float:
         result = re.search(r'([\d.]+)%', str(text))
 
         if result:
             extracted_number = result.group(1)
-            return extracted_number
+            return float(extracted_number)
 
-        return text
-
-
-    def convertir_a_miles_millones(self, numero_str):
-        numero_str = numero_str.replace('$', '').replace(' billion', 'e9')
-        if ',' in numero_str:
-            numero_str = numero_str.replace(',', '')
-        else:
-            numero_str = numero_str.replace('.', '')
-        return eval(numero_str)
+        return 0
 
 
-    def procces_gpd(self, texto: str):
-        result = re.search(r'\$([\d,.]+)(?: billion)?', str(texto))# million, billion
-
-        if result:
-            numero_str = result.group(1)
-            numero_convertido = self.convertir_a_miles_millones(numero_str)
-            return numero_convertido
-
-        return None
+    def procces_gpd(self, text: str) -> float:
+        if 'million' in text:
+            result = re.search(r'\$([\d,.]+)(?: million)?', str(text))# million
+            if result:
+                numero_str = result.group(1)
+                #numero_convertido = convertir_a_miles_millones(numero_str)
+                return float(numero_str) * 1.0e6
+            return 0
+        elif 'billion' in text:
+            result = re.search(r'\$([\d,.]+)(?: billion)?', str(text))# billion
+            if result:
+                numero_str = result.group(1)
+                #numero_convertido = convertir_a_miles_millones(numero_str)
+                return float(numero_str) * 1.0e9
+            return 0
+        return 0
 
 
     def get_decimal(self, texto: str):
@@ -106,7 +104,7 @@ class ProcessHTML:
             numero = result.group(1)
             return numero
 
-        return None
+        return 0
 
     def get_population(self, text: str) -> str:
         if re.match(r'\d+,\d+,\d+', text): 
@@ -126,5 +124,5 @@ class ProcessHTML:
             suma_total = sum(int(numero) for numero in numeros_sin_comas)
             return str(suma_total)
 
-        return text
+        return 0
  
